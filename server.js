@@ -4,17 +4,16 @@ dotenv.config({quiet: true});
 const express = require('express');
 const path = require('path');
 
-const app = express();
-
 const PORT = process.env.PORT;
 
-  app.listen(PORT, function(){
- console.log(`Rodando em http://localhost:${PORT}`);
-});
-
+const app = express();
 
 const publicPath = path.join(__dirname, 'public');
-const pagesPath = path.join(__dirname, 'public/pages');
+const pagesPath = path.join(publicPath, 'pages');
+
+app.listen(PORT, function(){
+ console.log(`Rodando em http://localhost:${PORT}`);
+});
 
 app.use("/assets", express.static(path.join(publicPath, "assets")));
 
