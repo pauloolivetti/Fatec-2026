@@ -1,0 +1,23 @@
+{
+  "name": "algoritmo_jsaula4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "um": "node ./src/exemplo_1.js",
+    "dois": "node ./src/exemplo_2.js",
+    "tres": "node ./src/exemplo_3.js",
+    "quatro": "node ./src/exemplo_4.js",
+    "cinco": "node ./src/exemplo_5.js",
+    "seis": "node ./src/exemplo_6.js",
+    "sete": "node ./src/exemplo_7.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "prompt": "^1.3.0",
+    "prompt-sync": "^4.2.0"
+  }
+}

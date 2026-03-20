@@ -1,0 +1,24 @@
+{
+  "name": "js_fatecaula1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "um": "node ./src/exemplo_1",
+    "dois": "node ./src/exemplo_2",
+    "tres": "node ./src/exemplo_3",
+    "quatro": "node ./src/exemplo_4",
+    "cinco": "node ./src/exemplo_5",
+    "seis": "node ./src/exemplo_6",
+    "sete": "node ./src/exemplo_7",
+    "oito": "node ./src/exemplo_8",
+    "nove": "node ./src/exemplo_9"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
