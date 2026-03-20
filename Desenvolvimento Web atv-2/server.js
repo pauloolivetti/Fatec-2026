@@ -22,3 +22,5 @@ app.get("/", function(req, res){
     res.sendFile(filePath)  
 
 })
+
+app.use("/assets", express.static(path.join(publicPath, "assets")));  
