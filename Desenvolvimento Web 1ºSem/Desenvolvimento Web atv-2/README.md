@@ -1,4 +1,4 @@
-# DMS CEP - Consulta de CEP
+# DSM CEP - Consulta de CEP
 
 Este projeto é uma aplicação web simples construída com Node.js e Express para consulta de CEP no Brasil usando a API pública ViaCEP.
 
