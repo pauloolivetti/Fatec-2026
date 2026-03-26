@@ -42,3 +42,31 @@ body {
     border: 0.0625rem solid #cbd5e1;
     font: inherit;
 }
+
+#result {
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    min-height: 1.5rem;
+    font-size: 0.95rem;
+    line-height: 1.4rem;
+} 
+
+.result.error {
+    background-color: #fef2f2;
+    color: #991b1b;
+}
+
+.result.loading {
+    background-color: #eff6ff;
+    color: #1d4ed8;
+}
+
+.result.success {
+    background-color: #f8fafc;
+    color: #0f172a;
+    border: 0.0625rem solid #e2e8f0;
+}
+
+.result p {
+    margin: 0.2rem 0;
+}
