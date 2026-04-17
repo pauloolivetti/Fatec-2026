@@ -1,13 +1,39 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="https://www.cps.sp.gov.br/favicon.ico" />
-    <link rel="stylesheet" href="/assets/css/main.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://www.cps.sp.gov.br/favicon.ico"/>
+    <link rel="stylesheet" href="/assets/css/style.css">
     <title>DSM | Cadastro</title>
 </head>
 <body>
-    <div>Boa tarde!</div>
+    <main>
+        <section class="register-card">
+            <h1>Cadastro de Usuários</h1>
+            <input id="user-input" placeholder="Digite o nome do usuário">
+            <input id="email-input" placeholder="Digite o e-mail">
+
+            <div class="actions">
+                <button class="action-button primary" id="save-user">Salvar</button>
+                <button class="action-button secondary"id="clear-user">Limpar</button>
+            </div>
+            <article class="result" id="result"></article>
+            <article class="user-list">
+                <table class="user-table">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>E-mail</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="users-table-body"></tbody>
+                </table>
+            </article>
+
+        </section>
+    </main>
+    <script defer src="/assets/js/main.js"></script>
 </body>
 </html>

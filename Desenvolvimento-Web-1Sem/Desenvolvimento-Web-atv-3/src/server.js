@@ -1,28 +1,30 @@
-const path = require("path");
-const express = require("express");
-const app = express();  
-const dotenv = require("dotenv");
-dotenv.config({ 
-    quiet: true, 
-    path: path.resolve(__dirname, "..", ".env")
+const dotenv = require('dotenv') 
+
+const express = require('express') 
+
+const path = require('path') 
+
+dotenv.config({
+    quiet:true,
+    path: path.resolve(__dirname,"..",".env")
 });
 
-const userRoutes = require("./routes/user.routes");
-const PORT = process.env.PORT;
-const publicPath = path.join(__dirname, "..", "public");
-const pagesPath = path.join(publicPath, "pages");
-const assetsPath = path.join(publicPath, "assets");
+const PORT = process.env.PORT 
 
-app.use(express.json()); // para interpretar o corpo das requisições como JSON  
+const userRoutes = require("./routes/user.routes")
+
+const app = express(); /* incorpora e chama a variavel com biblioteca express */
+
+app.use(express.json())
+
+const publicPath = path.join(__dirname,"..", "public") /* Cria variavel com o caminho para a pasta public */
+const pagesPath = path.join(publicPath,"pages") /* Cria variavel com o caminho para a pasta pages */
+const assetsPath = path.join(publicPath,"assets") /* Cria variavel com o caminho para a pasta assets */
+
+app.use("/", express.static(pagesPath)) /* mapeia a rota "/" para exibição da página */
+app.use("/assets", express.static(assetsPath)) /* mapeia a rota "/assets" para carregamento dos arquivos css e js */
+app.use("/users", userRoutes) /* mapeia a rota "/users" para carregamento dos usuários */
 
 app.listen(PORT, function(){
-    console.log(`Rodando em http://localhost:${PORT}`);
-
-});    
-
-// a rota para a pagina index.html
-app.use("/", express.static(pagesPath));
-//definir a rota para os arquivos estáticos (css, js, imagens)
-app.use("/assets", express.static(assetsPath));
-
-app.use("/users", userRoutes);
+    console.log(`Rodando em http://localhost:${PORT}`)
+})
