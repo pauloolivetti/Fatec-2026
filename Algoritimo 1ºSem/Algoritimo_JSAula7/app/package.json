@@ -1,0 +1,25 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "um": "tsc && node dist/um.js",
+    "dois": "tsc && node dist/dois.js",
+    "tres": "tsc && node dist/tres.js",
+    "quatro": "tsc && node dist/quatro.js",
+    "cinco": "tsc && node dist/cinco.js",
+    "seis": "tsc && node dist/seis.js",
+    "sete": "tsc && node dist/sete.js",
+    "oito": "tsc && node dist/oito.js" ,
+    "nove": "tsc && node dist/nove.js",
+    "dez": "tsc && node dist/dez.js"    
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "typescript": "^6.0.3"
+  }
+}
