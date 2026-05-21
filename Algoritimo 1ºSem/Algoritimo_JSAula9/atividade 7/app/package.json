@@ -8,12 +8,8 @@
     "dois": "tsc && node ./dist/atividade2",
     "tres": "tsc && node ./dist/atividade3",
     "quatro": "tsc && node ./dist/atividade4",
-    "cinco": "tsc && node ./dist/atividade5",
-    "seis": "tsc && node ./dist/atividade6",
-    "sete": "tsc && node ./dist/atividade7",
-    "oito": "tsc && node ./dist/atividade8",
-    "nove": "tsc && node ./dist/atividade9",
-    "dez": "tsc && node ./dist/atividade10"
+    "cinco": "tsc && node ./dist/atividade5"
+  
   },
   "keywords": [],
   "author": "",
